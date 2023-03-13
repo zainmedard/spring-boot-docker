@@ -3,7 +3,7 @@ pipeline {
     PROJECT = "sandbox-io-289003"
     APP_NAME = "zain-app"
     FE_SVC_NAME = "${APP_NAME}-frontend"
-    CLUSTER = "zain-jenkins-cd"
+    CLUSTER = "jenkins-cd"
     CLUSTER_ZONE = "us-east1-d"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
