@@ -1,0 +1,21 @@
+piVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zain-springboot-app
+  labels:
+    app: zain-springboot-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: zain-springboot-app
+  template:
+    metadata:
+      labels:
+        app: zain-springboot-app
+    spec:
+      containers:
+      - name: zain-springboot-app
+        image: gcr.io/sandbox-io-289003/zain-app:master.17 
+        ports:
+        - containerPort: 8080
