@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: zain-springboot-app
-        image: gcr.io/sandbox-io-289003/zain-app:master.17 
+        image: gcr.io/sandbox-io-289003/zain-app:master.20 
         ports:
         - containerPort: 8080
